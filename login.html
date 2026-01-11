@@ -2,30 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Anime Lab Login</title>
-<style>
-body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #1e1e2f; color: #fff; }
-input { padding: 10px; font-size: 16px; margin-right: 10px; border-radius: 5px; border: none; }
-button { padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; background: #ff4081; color: #fff; border: none; transition: 0.3s; }
-button:hover { background: #e91e63; }
-</style>
+<title>Login - Anime Lab</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h2>Enter Password to Access Anime Lab</h2>
-<div>
-<input type="password" id="pw" placeholder="Password">
-<button onclick="check()">Enter</button>
-</div>
 
-<script>
-function check() {
-  const pw = document.getElementById('pw').value;
-  if(pw === "anime123") {
-    window.location.href = "index.html";
-  } else {
-    alert("Wrong password!");
-  }
-}
-</script>
+<h1>Login</h1>
+
+<form style="display:flex; flex-direction:column; gap:10px; width:300px; margin-top:20px;">
+  <input type="text" placeholder="Username" style="padding:10px; border-radius:5px; border:none;">
+  <input type="password" placeholder="Password" style="padding:10px; border-radius:5px; border:none;">
+  <button type="submit" style="padding:10px; border:none; border-radius:5px; background:#ff4081; color:#fff; cursor:pointer;">Login</button>
+</form>
+
 </body>
 </html>
