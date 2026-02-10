@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Subjects</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Choose a Subject</h1>
+
+  <div class="cards">
+    <a class="card" href="subjects/poo.html">POO</a>
+    <a class="card" href="subjects/graphes.html">Graphes</a>
+    <a class="card" href="subjects/finance.html">Finance Publique</a>
+  </div>
+
+  <script>
+    if (localStorage.getItem("logged") !== "true") {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

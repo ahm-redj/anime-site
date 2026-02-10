@@ -91,3 +91,42 @@ nav a:hover {
   h1 { font-size: 2rem; }
   .overlay { font-size: 1rem; }
 }
+body {
+  background: #0f172a;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.login-card {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: #020617;
+  border-radius: 12px;
+}
+
+.login-card input,
+.login-card button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #020617;
+  padding: 30px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.card:hover {
+  background: #1e293b;
+}

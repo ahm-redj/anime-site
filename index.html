@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Anime Lab</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>Study Portal - Login</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-<h1>Anime Lab</h1>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="login.html">Login</a>
-</nav>
-
-<div class="cards">
-  <div class="card">
-    <img src="images/naruto.jpg" alt="Naruto">
-    <div class="overlay">Naruto</div>
+  <div class="login-card">
+    <h1>Study Portal</h1>
+    <input id="user" type="text" placeholder="Username" />
+    <input id="pass" type="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="err" style="color:red;"></p>
   </div>
-  <div class="card">
-    <img src="images/aot.jpg" alt="Attack on Titan">
-    <div class="overlay">Attack on Titan</div>
-  </div>
-  <div class="card">
-    <img src="images/deathnote.jpg" alt="Death Note">
-    <div class="overlay">Death Note</div>
-  </div>
-</div>
 
+  <script>
+    function login() {
+      const u = document.getElementById("user").value;
+      const p = document.getElementById("pass").value;
+
+      if (u === "student" && p === "1234") {
+        localStorage.setItem("logged", "true");
+        window.location.href = "dashboard.html";
+      } else {
+        document.getElementById("err").innerText = "Wrong username or password";
+      }
+    }
+  </script>
 </body>
 </html>
